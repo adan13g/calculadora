@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculadora.Page1"
+             Title = "Calculadora"
+        BackgroundColor="#141A23">
+  
+  <Grid x:Name="keypadGrid"  RowSpacing="1" ColumnSpacing="1" >
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Label x:Name="label12" TextColor="#ADAFB5"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="36" VerticalOptions="Center" HorizontalTextAlignment="End"/>
+    <Label x:Name="label1" TextColor="#ADAFB5"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" FontSize="40"  VerticalOptions="Center" HorizontalTextAlignment="End"/>
+    <Button Text="C"  Clicked="limpiar" FontSize="40"  TextColor="#ADAFB5" BackgroundColor="#262D3B" Grid.Row="2" Grid.Column="0" />
+    <Button Text="CE" Clicked="limpiar" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#262D3B" Grid.Row="2" Grid.Column="1"  />
+    <Button Text="√" Clicked="raiz" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#262D3B" Grid.Row="2" Grid.Column="2"  />
+    <Button Text="+" Clicked="suma" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#262D3B" Grid.Row="2" Grid.Column="3" />
+    <Button Text="-"  Clicked="resta" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#262D3B" Grid.Row="4" Grid.Column="3"   />
+    <Button Text="x"  Clicked="multiplicacion"  FontSize="40" TextColor="#ADAFB5" BackgroundColor="#262D3B" Grid.Row="3" Grid.Column="3"   />
+    <Button Text="/" Clicked="division" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#262D3B" Grid.Row="5" Grid.Column="3"   />
+    <Button Text="=" Clicked="igual" FontSize="40" TextColor="White" BackgroundColor="#52B268" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2"   />
+
+    <Button Text="7" Clicked="numero7" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#323B4D" Grid.Row="3" Grid.Column="0" />
+    <Button Text="8" Clicked="numero8" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#323B4D" Grid.Row="3" Grid.Column="1"  />
+    <Button Text="9" Clicked="numero9" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#323B4D"  Grid.Row="3" Grid.Column="2" />
+    <Button Text="4" Clicked="numero4" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#323B4D" Grid.Row="4" Grid.Column="0" />
+    <Button Text="5" Clicked="numero5" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#323B4D" Grid.Row="4" Grid.Column="1"  />
+    <Button Text="6" Clicked="numero6" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#323B4D" Grid.Row="4" Grid.Column="2"  />
+    <Button Text="1" Clicked="numero1"  FontSize="40" TextColor="#ADAFB5"  BackgroundColor="#323B4D" Grid.Row="5" Grid.Column="0"  />
+    <Button Text="2" Clicked="numero2" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#323B4D" Grid.Row="5" Grid.Column="1" />
+    <Button Text="3" Clicked="numero3" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#323B4D" Grid.Row="5" Grid.Column="2"  />
+    <Button Text="0" Clicked="numero0" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#323B4D" Grid.Row="6" Grid.Column="1"   />
+    <Button Text="." Clicked="punto1" FontSize="40" TextColor="#ADAFB5" BackgroundColor="#323B4D" Grid.Row="6" Grid.Column="0"  />
+
+  </Grid>
+
+</ContentPage>
